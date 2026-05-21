@@ -13,7 +13,6 @@ class GroceryApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Grocery App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Arial', useMaterial3: true),
       home: const OnboardingScreen(),
