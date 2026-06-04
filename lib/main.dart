@@ -1,23 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'BT1/Screens/OnboardingScreen.dart';
-import 'BT2/Screens/ExploreScreen.dart';
+import './ShoeStoreShop/ShopStore.dart';
 
 void main() {
-  runApp(const ShopApp() /*GroceryApp()*/);
-}
-
-class GroceryApp extends StatelessWidget {
-  const GroceryApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(fontFamily: 'Arial', useMaterial3: true),
-      home: const OnboardingScreen(),
-    );
-  }
+  runApp(const ShopApp());
 }
 
 class ShopApp extends StatelessWidget {
@@ -28,7 +14,7 @@ class ShopApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Arial', useMaterial3: true),
-      home: const ExploreScreen(),
+      home: const ShopStore(),
     );
   }
 }
